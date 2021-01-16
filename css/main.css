@@ -204,13 +204,19 @@ aside {
 
 /***** Features *****/
 
-
 .features-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   padding: 40px 0px;
+}
+
+.features-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .features-section article {
@@ -222,14 +228,6 @@ aside {
   margin: 0;
   padding-top: 25px
 }
-
-.features-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
 
 /***** Reviews *****/
 
@@ -263,13 +261,12 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 .contact-content p {
-  margin: 0;
+  margin: 0px;
 }
-
-
 
 /* ==========================================================================
    FAQ page
@@ -289,7 +286,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding
+
 }
 
 .faq .content-wrapper h2 {
@@ -523,6 +520,54 @@ aside {
 
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here*/
+
+  /* -------------------------- Mobile style Homepage  -------------------------*/
+
+  .content-wrapper {
+    max-width: 80%;
+    margin: 50px 0px;
+  }
+
+  /***** Hero Area *****/
+
+    .hero-area .cpntent-wrapper h1 {
+      width: 60%;
+    }
+
+  /***** Aside *****/
+
+  /***** Features Section *****/
+
+  .features-section article {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    align-items: center;
+    flex-basis: 27%;
+  }
+
+  /***** Review section *****/
+
+  /***** Footer *****/
+
+
+  /* ==========================================================================
+     About page
+     ========================================================================== */
+     .contact-section .content-wrapper {
+       width: 100%;
+     }
+
+     .contact-content {
+       display: flex;
+       justify-content: space-around;
+       align-items: flex-start;
+     }
+
+  /* ==========================================================================
+     FAQ page
+     ========================================================================== */
+
 
 
 }
