@@ -111,13 +111,13 @@ a {
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
+  font-size: 1.6em;
 }
 
 h3,
 h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.125em;
+  font-size: 1.2em;
   margin: 20px;
 }
 
@@ -131,7 +131,7 @@ address {
 }
 
 .content-wrapper {
-     width: 90%;
+     width: 88%;
      margin: 0px 0px;
    }
 
@@ -148,7 +148,8 @@ footer {
 /***** Header *****/
 
 header {
-  padding: 15px 0px;
+  padding-top: 20px;
+  background-color: #202322;
 }
 
 header .content-wrapper {
@@ -168,15 +169,16 @@ header nav {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 62%;
+  width: 60%;
+  padding-right: 50px;
 }
 
 header nav ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
   width: 100%;
 }
+
 
 /***** Footer *****/
 
@@ -185,6 +187,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #202322;
 }
 
 footer .content-wrapper {
@@ -241,7 +244,38 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 40px 0px;
+  padding: 20px 0px;
+  background: #527158;
+}
+
+aside h3 {
+  margin: 0;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /***** Features *****/
@@ -251,7 +285,8 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 40px 0px;
+  padding: 20px 0px;
+  background-color: black
 }
 
 .features-content {
@@ -278,14 +313,16 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 40px 0px;
+  padding: 20px 0px;
+  background-color: #2a423a;
 }
 
 .review-section .content-wrapper {
   margin: 0;
 }
 .review-section h3 {
-  width: 60%;
+  margin: 0;
+  width: 70%;
 }
 
 /* ==========================================================================
@@ -297,6 +334,7 @@ aside {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background-color: #527158;
 }
 
 .contact-section {
@@ -304,11 +342,16 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #2a423a;
+  padding: 30px 0px;
 }
 
+.contact-content h4,
 .contact-content p {
   margin: 0px;
+  padding: 5px 0px;
 }
+
 
 
 /* ==========================================================================
@@ -322,6 +365,7 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  background-color: #527158;
 }
 
 .faq .content-wrapper {
@@ -329,13 +373,22 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-
+  padding: 20px 0px;
 }
 
 .faq .content-wrapper h2 {
   width: 100%;
+  margin: 0;
+  padding: 20px 0 30px 0;
 }
 
+.faq-content h4 {
+  margin: 0px;
+}
+
+.faq-content p {
+  padding: 10px 0px;
+}
 
 /* ==========================================================================
    Helper classes
@@ -567,7 +620,7 @@ aside {
   /* -------------------------- Mobile style Homepage  -------------------------*/
 
   .content-wrapper {
-    max-width: 80%;
+    max-width: 70%;
     margin: 50px 0px;
   }
 
@@ -592,20 +645,44 @@ aside {
   /***** Review section *****/
 
   /***** Footer *****/
+  footer .content-wrapper {
+
+    width: 70%;
+    margin: 0px 0px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px;
+  }
+
+  .contact {
+    margin-right: 400px;
+  }
+
+  footer .copyright {
+    text-align: center;
+    width: 100%;
+  }
+
+
 
 
   /* ==========================================================================
      About page
      ========================================================================== */
      .contact-section .content-wrapper {
-       width: 100%;
+       width: 65%;
+       justify-content: space-between;
+       align-items: center;
      }
 
      .contact-content {
        display: flex;
-       justify-content: space-around;
-       align-items: flex-start;
      }
+
 
   /* ==========================================================================
      FAQ page
