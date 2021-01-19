@@ -329,12 +329,21 @@ input[type=button] {
    About page
    ========================================================================== */
 
-.mission {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    background-color: #527158;
+ .mission {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: row wrap;
+   background-color: #527158;
+   padding: 30px 0px;
+ }
+
+.mission h2,
+.contact-section h2,
+.contact-content h4,
+.contact-content p {
+  margin: 0px;
+  padding: 5px 0px;
 }
 
 .contact-section {
@@ -345,13 +354,6 @@ input[type=button] {
   background-color: #2a423a;
   padding: 30px 0px;
 }
-
-.contact-content h4,
-.contact-content p {
-  margin: 0px;
-  padding: 5px 0px;
-}
-
 
 
 /* ==========================================================================
@@ -620,7 +622,7 @@ input[type=button] {
   /* -------------------------- Mobile style Homepage  -------------------------*/
 
   .content-wrapper {
-    max-width: 70%;
+    max-width: 1200px;
     margin: 50px 0px;
   }
 
